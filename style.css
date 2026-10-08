@@ -196,7 +196,6 @@ h1{
 }
 
 .img-text{
-    border: 15px solid grey;
     padding: 25px;
     color: white;
     letter-spacing: 5px;
@@ -310,7 +309,7 @@ h1{
 }
 
 .img-text-2{
-    display: block;
+    diflex;
     align-items: flex-start;
     width: 45%;
     height: auto;
@@ -330,7 +329,7 @@ h1{
     font-size: 70px;
     font-weight: 100;
     padding-top: 20px;
-    display: block;
+    display: flex;
 }
 
 .tex{
@@ -361,7 +360,7 @@ h5{
     width: 55%;
 }
 
-.services {
+.service {
     width: 100%;
 }
 
@@ -377,7 +376,7 @@ h5{
     width: calc(50% - 5px);
     height: auto;
     padding: 15px;
-    background-color: #f8f8f8;
+    background-color: rgb(248, 247, 247);
 }
 
 .cards > div:hover{
@@ -524,18 +523,302 @@ h5{
 
 .img-3{
     background-image: url(https://preview.colorlib.com/theme/buildream/images/bg_4.jpg);
-    background-position: center;
+    background-position: center 20px;
     background-repeat: no-repeat;
     width: 100%;
     height: 400px;
     background-size: cover;
     position: relative;
+    margin-top: 70px;
     overflow: hidden;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://preview.colorlib.com/theme/buildream/images/bg_4.jpg);
+    
+}
+
+.img-3::before{
+    content: "";
+    width: 49%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(
+        0 0,
+        87% 0,
+        100% 100%,
+        0 100%
+    );
 }
 
 .text3{
-    position: absolute;
-    opacity: .5;
-    background: #000;
+    position: relative;
+    width: 60%;
+    color: #3b424a;
+    transform: translate(-50px);
+    display: flex;
+    flex-direction: column;
 }
+
+.subhead{
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.haed{
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.appointment-btn{
+    width: 280px;
+    height: 80px;
+    color: #3b424a;
+    background-color: orange;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-left: 10px;
+
+}
+
+ .services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.sub-head{
+    color: brown;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.main-head{
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.service-content{
+    width: 85%;
+    margin: 50px auto 100px;
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.left-img{
+    width: 50%;
+    height: 765px;
+    background-image: url("https://preview.colorlib.com/theme/buildream/images/services.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.right-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card-icon-1,
+.card-icon-2,
+.card-icon-3 {
+    align-self: flex-start;
+}
+
+.card-content-1,
+.card-content-2,
+.card-content-3 {
+    text-align: left;
+    align-items: flex-end;
+    width: 75%;
+}
+
+.card-grey{
+    width: 100%;
+    height: 240px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #3b424a;
+}
+
+.card-icon-1{
+    width: 50px;
+    font-size: 50px;
+    display: flex;
+    color: whitesmoke;
+    
+}
+
+.card-content-1 h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.card-content-1 p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+
+.card-orange{
+    width: 100%;
+    height: 240px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: orange;
+}
+
+.card-icon-2{
+    width: 50px;
+    font-size: 50px;
+    display: flex;
+    color: #3b424a;
+}
+
+.card-content-2 h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: #3b424a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content-2 p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #3b424a;
+
+}
+
+
+.card-grey-white{
+    width: 100%;
+    height: 240px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card-icon-3{
+    width: 50px;
+    font-size: 50px;
+    display: flex;
+    color: orange;
+    
+}
+
+.card-content-3 h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: #3b424a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content-3 p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #3b424a;
+
+}
+
+
+.learn-btn{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 30px;
+    text-decoration: none;
+    color: brown;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    width: 103px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    font-weight: bolder;
+     margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.learn-btn-3{
+    display: flex;
+     margin-top: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: brown;
+    background-color: whitesmoke;
+    border: 1px solid burlywood;
+    border-radius: 1px;
+    padding: 10px 20px;
+    width: 103px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 8.5px;
+    font-weight: bolder;
+     margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.card-grey-white:hover {
+    background-color: #3b424a; 
+    color: #ffffff;
+}
+
+.card-grey-white:hover h2,
+.card-grey-white:hover p,
+.card-grey-white:hover i {
+    color: #ffffff; 
+}
+
